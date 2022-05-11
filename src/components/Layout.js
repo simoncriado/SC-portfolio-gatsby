@@ -1,5 +1,5 @@
 import React from "react"
-import NavBar from "./NavBar"
+import NavBar from "./Navbar"
 import "../styles/global.css"
 
 export default function Layout({ children }) {
@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <NavBar />
       <div className="content">{children}</div>
       <footer>
-        <p>Copyright 2022 Web Warrior</p>
+        <p>Copyright 2022 Simon Criado</p>
       </footer>
     </div>
   )
