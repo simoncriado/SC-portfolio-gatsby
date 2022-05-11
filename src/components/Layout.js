@@ -1,11 +1,11 @@
 import React from "react"
-import NavBar from "./Navbar"
+import Navbar from "./Navbar"
 import "../styles/global.css"
 
 export default function Layout({ children }) {
   return (
     <div className="layout">
-      <NavBar />
+      <Navbar />
       <div className="content">{children}</div>
       <footer>
         <p>Copyright 2022 Simon Criado</p>
