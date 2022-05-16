@@ -14,10 +14,12 @@ body {
 body {
   background: radial-gradient(
     at top left,
-    rgba(146, 43, 225, 1) 0%,
-    rgba(43, 9, 107, 1) 100%
+
+    #403b4a 0%,
+    #e7e9bb 100%
   );
   background-repeat: no-repeat;
+  height: 100%;
 }
 p {
   margin: 16px auto;
@@ -26,8 +28,12 @@ p {
 
 /* layout & nav */
 .layout {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 80%;
   margin: 0 auto;
+}
+.content {
+  flex: 1;
 }
 nav {
   display: grid;
@@ -48,8 +54,6 @@ nav a {
 nav a:hover {
   border-color: white;
 }
-footer p {
-  text-align: center;
-  color: #bbb;
-  margin: 40px auto;
+.image {
+  border-radius: 15px;
 }

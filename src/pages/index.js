@@ -11,14 +11,14 @@ export default function Home({ data }) {
         <div>
           <h2>Design</h2>
           <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer basel in Barcelona</p>
+          <p>Junior Web Developer based in Barcelona</p>
           <Link className={styles.btn} to="/projects">
             My Portfolio Projects
           </Link>
         </div>
         <GatsbyImage
           image={data.file.childImageSharp.gatsbyImageData}
-          alt="banner"
+          alt="portrait"
         />
       </section>
     </Layout>
