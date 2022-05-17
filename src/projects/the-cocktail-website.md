@@ -2,6 +2,7 @@
 title: The Cocktail Website
 stack: VueJS
 slug: the-cocktail-website
+url: https://the-cocktail-website.netlify.app
 date: 2019-08-01T00:00:00+00:00
 thumb: ../images/thumbs/cocktail.png
 featuredImg: ../images/featured/cocktail-banner.png
