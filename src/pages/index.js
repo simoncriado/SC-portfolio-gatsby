@@ -1,17 +1,46 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
+import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
+  // useEffect(() => {
+  //   const script = document.createElement("script")
+
+  //   script.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
+  //   script.async = true
+
+  //   document.body.appendChild(script)
+
+  //   return () => {
+  //     document.body.removeChild(script)
+  //   }
+  // }, [])
+
   return (
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>Design</h2>
+          <h2 className="autoType">Design</h2>
           <h3>Develop & Deploy</h3>
-          <p>Junior Web Developer based in Barcelona</p>
+          <p>
+            <Typical
+              loop={Infinity}
+              wrapper="b"
+              steps={[
+                "Junior Web Developer based in Barcelona",
+                1000,
+                "Fast learner",
+                1000,
+                "Team player",
+                1000,
+                "Highly motivated",
+                1000,
+              ]}
+            />
+          </p>
           <Link className={styles.btn} to="/projects">
             My Portfolio Projects
           </Link>
