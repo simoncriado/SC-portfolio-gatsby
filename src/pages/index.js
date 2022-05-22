@@ -3,22 +3,9 @@ import React from "react"
 import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
-  // useEffect(() => {
-  //   const script = document.createElement("script")
-
-  //   script.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
-  //   script.async = true
-
-  //   document.body.appendChild(script)
-
-  //   return () => {
-  //     document.body.removeChild(script)
-  //   }
-  // }, [])
-
   return (
     <Layout>
       <section className={styles.header}>
@@ -45,10 +32,19 @@ export default function Home({ data }) {
             My Portfolio Projects
           </Link>
         </div>
-        <GatsbyImage
+        {/* <GatsbyImage
           image={data.file.childImageSharp.gatsbyImageData}
           alt="portrait"
-        />
+        /> */}
+        <div>
+          <div className={styles.shape}></div>
+          <StaticImage
+            className={styles.img}
+            src="../images/fotoCV-r.png"
+            alt="Portrait"
+            transformOptions={{ grayscale: true }}
+          />
+        </div>
       </section>
     </Layout>
   )
@@ -56,9 +52,9 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query Banner {
-    file(relativePath: { eq: "banner.png" }) {
+    file(relativePath: { eq: "fotoCV.JPG" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
+        gatsbyImageData
       }
     }
   }
