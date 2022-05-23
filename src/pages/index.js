@@ -3,7 +3,7 @@ import React from "react"
 import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
   return (
@@ -17,11 +17,13 @@ export default function Home({ data }) {
               loop={Infinity}
               wrapper="b"
               steps={[
-                "Junior Web Developer based in Barcelona",
+                "Web Developer based in Barcelona",
                 1000,
-                "Fast learner",
+                "Responsible",
                 1000,
-                "Team player",
+                "Empathetic & team player",
+                1000,
+                "Proactive & fast learner",
                 1000,
                 "Highly motivated",
                 1000,
@@ -29,14 +31,18 @@ export default function Home({ data }) {
             />
           </p>
           <Link className={styles.btn} to="/projects">
-            My Portfolio Projects
+            My Projects
+          </Link>
+          <Link className={styles.btn} to="#">
+            Download my CV
           </Link>
         </div>
-        {/* <GatsbyImage
+        <GatsbyImage
+          className={styles.img}
           image={data.file.childImageSharp.gatsbyImageData}
           alt="portrait"
-        /> */}
-        <div>
+        />
+        {/* <div className={styles.parent}>
           <div className={styles.shape}></div>
           <StaticImage
             className={styles.img}
@@ -44,7 +50,7 @@ export default function Home({ data }) {
             alt="Portrait"
             transformOptions={{ grayscale: true }}
           />
-        </div>
+        </div> */}
       </section>
     </Layout>
   )

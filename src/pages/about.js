@@ -5,24 +5,34 @@ export default function About() {
   return (
     <Layout>
       <div>
-        <h1>About Page</h1>
+        <h1>Some information about me</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quas
-          ea animi odio nesciunt aut tempora, eveniet impedit inventore in qui
-          nihil corrupti, libero magnam velit voluptates doloremque, sint
-          accusamus.
+          My professional career started in tourism. In the different positions
+          (hotels, restaurants, airlines, etc) I got the chance to meet many
+          different types of people, got to work in different places, had the
+          chance to travel the World and faced many (some of them challenging)
+          situations. But at some point I realised I had already "taken"
+          everything I could, and wanted, from that sector. It was time for a
+          change!
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quas
-          ea animi odio nesciunt aut tempora, eveniet impedit inventore in qui
-          nihil corrupti, libero magnam velit voluptates doloremque, sint
-          accusamus.
+          Then after some investigating, talking with different contacts and
+          getting some first hands-on experience in coding, in early 2019 I
+          decided to quit my job as a Cabin Crew Member and started looking for
+          a coding bootcamp that suited my needs.
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quas
-          ea animi odio nesciunt aut tempora, eveniet impedit inventore in qui
-          nihil corrupti, libero magnam velit voluptates doloremque, sint
-          accusamus.
+          The coding bootcamp at Ubiqum Academy was a great idea! 100% practical
+          and based on an agile work environment. I was able to dive completely
+          into the coding world. Since then I have worked on various projects
+          and websites. Focusing on technologies like HTML, CSS, JavaScript,
+          React, using Apis, Firebase and GatsbyJS.
+        </p>
+        <p>
+          Now I am looking for a professional position to strengthen my
+          programming skills and continue learning. I am an adventurous person,
+          love challenges and I feel ready for this next step in my professional
+          path :)
         </p>
       </div>
     </Layout>

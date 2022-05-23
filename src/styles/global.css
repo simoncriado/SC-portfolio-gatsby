@@ -44,16 +44,44 @@ nav .links {
   display: inline-block;
   text-align: right;
 }
-nav a {
+/* nav a {
   display: inline-block;
   margin-left: 20px;
   font-weight: 400;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
-}
-nav a:hover {
+} */
+/* nav a:hover {
   border-color: white;
+} */
+nav a {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 400;
+
+  /* border-bottom: 3px solid transparent; */
+}
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: white;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+nav a:hover::after {
+  width: 100%;
 }
 .image {
-  border-radius: 15px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#fff, #403b4a);
+  border-radius: 6px;
 }

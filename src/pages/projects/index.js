@@ -14,11 +14,11 @@ export default function Projects({ data }) {
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I´ve created and worked on</h3>
+        <p>(You can click on any of the projects to go to each website!)</p>
         <div className={styles.projects}>
           {projects.map(project => (
-            // <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
             <a href={project.frontmatter.url} key={project.id}>
-              <div>
+              <div className={styles.project}>
                 <GatsbyImage
                   className="image"
                   image={
@@ -26,14 +26,19 @@ export default function Projects({ data }) {
                   }
                   alt="project image"
                 />
-                <h3>{project.frontmatter.title}</h3>
-                <p>{project.frontmatter.stack}</p>
-                <p>{project.html}</p>
+                <div className={styles.text}>
+                  <h3>{project.frontmatter.title}</h3>
+                  <p>{project.frontmatter.stack}</p>
+                  <div dangerouslySetInnerHTML={{ __html: project.html }} />
+                </div>
               </div>
             </a>
           ))}
         </div>
-        <p>Like what you see? Email me at {contact} fro a quote!</p>
+        <p>
+          Like what you see? Email me at{" "}
+          <a href="mailto:scriado.f@gmail.com">{contact}</a> for a quote!
+        </p>
       </div>
     </Layout>
   )
@@ -54,7 +59,12 @@ export const query = graphql`
           url
           thumb {
             childImageSharp {
-              gatsbyImageData(layout: FIXED, width: 1000, height: 1000)
+              gatsbyImageData(
+                layout: CONSTRAINED
+                placeholder: BLURRED
+                width: 300
+                height: 300
+              )
             }
           }
         }

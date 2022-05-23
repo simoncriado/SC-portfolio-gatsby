@@ -13,7 +13,25 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 80px;
-  margin: 80px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.project {
+  height: 500px;
+  width: 300px;
+  background-color: grey;
+  border: 1px solid #403b4a;
+  border-radius: 5px;
+  word-wrap: break-word;
+  overflow: auto;
+}
+.project:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.text {
+  margin-left: 5px;
+  margin-right: 5px;
+
+  color: black;
 }
 .projects h3 {
   text-align: center;
@@ -21,6 +39,5 @@
   font-weight: 500;
 }
 .projects p {
-  color: #ccc;
   margin-top: 4px;
 }
