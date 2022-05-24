@@ -1,5 +1,6 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
+import Helmet from "react-helmet"
 import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
@@ -8,6 +9,9 @@ import { GatsbyImage } from "gatsby-plugin-image"
 export default function Home({ data }) {
   return (
     <Layout>
+      <Helmet>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Helmet>
       <section className={styles.header}>
         <div>
           <h2 className="autoType">Design</h2>

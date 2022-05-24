@@ -10,10 +10,9 @@
   font-weight: 400;
 }
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .project {
   height: 500px;
@@ -23,15 +22,16 @@
   border-radius: 5px;
   word-wrap: break-word;
   overflow: auto;
+  margin: 30px;
 }
 .project:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .text {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 
-  color: black;
+  color: black !important;
 }
 .projects h3 {
   text-align: center;

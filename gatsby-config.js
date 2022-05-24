@@ -26,6 +26,12 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/fav1.png",
+      },
+    },
   ],
   siteMetadata: {
     title: "Simon Criado",
