@@ -4,7 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "src/images"
+media_folder: "src/images/thumbs"
 
 collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
@@ -19,4 +19,5 @@ collections:
       - { label: "Url", name: "url", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Thumb", name: "thumb", widget: "image" }
+      - { label: "FeaturedImg", name: "featuredImg", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
