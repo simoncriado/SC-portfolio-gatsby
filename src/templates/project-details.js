@@ -6,24 +6,24 @@ import { graphql } from "gatsby"
 
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
-  const { title, stack, featuredImg } = data.markdownRemark.frontmatter
+  const { title, stack } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
       <div className={styles.details}>
         <h2>{title}</h2>
         <h3>{stack}</h3>
-        <div className={styles.featured}>
+        {/* <div className={styles.featured}>
           <GatsbyImage
             image={featuredImg.childImageSharp.gatsbyImageData}
             alt="featured image"
-          />
-          <div
-            className={styles.html}
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
+          /> */}
+        <div
+          className={styles.html}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
+      {/* </div> */}
     </Layout>
   )
 }
@@ -36,11 +36,6 @@ export const query = graphql`
         stack
         slug
         title
-        featuredImg {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
       }
     }
   }
