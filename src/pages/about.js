@@ -4,8 +4,8 @@ import Layout from "../components/Layout"
 export default function About() {
   return (
     <Layout>
-      <div>
-        <h1>Some information about me</h1>
+      <div className="about">
+        <h2>Some information about myself</h2>
         <p>
           My professional career started in tourism. In the different positions
           (hotels, restaurants, airlines, etc) I got the chance to meet many

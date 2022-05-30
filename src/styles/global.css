@@ -85,3 +85,11 @@ nav a:hover::after {
   background: #403b4a;
   border-radius: 6px;
 }
+
+.about {
+  text-align: center;
+}
+.about > h2 {
+  font-size: 3em;
+  margin-top: 80px;
+}
