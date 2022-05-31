@@ -38,6 +38,13 @@ module.exports = {
         plugins: [`gatsby-plugin-netlify-cms-paths`],
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`,
+      },
+    },
     // {
     //   resolve: `gatsby-remark-relative-images-v2`,
     // },
