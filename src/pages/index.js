@@ -7,6 +7,7 @@ import * as styles from "../styles/home.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Home({ data }) {
+  console.log(data)
   return (
     <Layout>
       <Helmet>
