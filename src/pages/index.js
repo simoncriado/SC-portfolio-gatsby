@@ -5,7 +5,7 @@ import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
-import downloadFile from "../assets/CV_SIMON_CRIADO.pdf"
+import downloadFile from "../../static/assets/documents/CV_SIMON_CRIADO.pdf"
 
 export default function Home({ data }) {
   return (
