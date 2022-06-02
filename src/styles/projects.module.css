@@ -17,22 +17,24 @@
 .project {
   height: 500px;
   width: 300px;
-  background-color: grey;
-  border: 1px solid #403b4a;
+  /* background: rgba(187, 134, 252, 0.1);
+  border: 1px solid #bb86fc; */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   word-wrap: break-word;
   overflow: auto;
   margin: 30px;
 }
-.project:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
 .text {
   margin-left: 10px;
   margin-right: 10px;
-
-  color: black !important;
 }
+/* .text h3 {
+  color: #bb86fc;
+}
+.text p {
+  color: #bb86fc;
+} */
 .projects h3 {
   text-align: center;
   margin: 20px auto 0px;

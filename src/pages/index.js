@@ -5,9 +5,9 @@ import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
+import downloadFile from "../assets/CV_SIMON_CRIADO.pdf"
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <Layout>
       <Helmet>
@@ -15,10 +15,11 @@ export default function Home({ data }) {
       </Helmet>
       <section className={styles.header}>
         <div>
-          <h2 className="autoType">Design</h2>
+          <h2>Design</h2>
           <h3>Develop & Deploy</h3>
           <p>
             <Typical
+              className={styles.autoText}
               loop={Infinity}
               wrapper="b"
               steps={[
@@ -38,24 +39,15 @@ export default function Home({ data }) {
           <Link className={styles.btn} to="/projects">
             My Projects
           </Link>
-          <Link className={styles.btn} to="#">
+          <a className={styles.btn} href={downloadFile} download>
             Download my CV
-          </Link>
+          </a>
         </div>
         <GatsbyImage
           className={styles.img}
           image={data.file.childImageSharp.gatsbyImageData}
           alt="portrait"
         />
-        {/* <div className={styles.parent}>
-          <div className={styles.shape}></div>
-          <StaticImage
-            className={styles.img}
-            src="../images/fotoCV-r.png"
-            alt="Portrait"
-            transformOptions={{ grayscale: true }}
-          />
-        </div> */}
       </section>
     </Layout>
   )

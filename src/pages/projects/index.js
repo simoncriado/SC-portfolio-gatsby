@@ -7,20 +7,18 @@ import { GatsbyImage } from "gatsby-plugin-image"
 export default function Projects({ data }) {
   const projects = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
-  console.log(data)
 
   return (
     <Layout>
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I´ve created and worked on</h3>
-        <p>(You can click on any of the projects to go to each website!)</p>
+        <p>(You can click on any of the card to go to each project website!)</p>
         <div className={styles.projects}>
           {projects.map(project => (
             <a href={project.frontmatter.url} key={project.id}>
               <div className={styles.project}>
                 <GatsbyImage
-                  className="image"
                   image={
                     project.frontmatter.thumb.childImageSharp.gatsbyImageData
                   }
@@ -37,7 +35,10 @@ export default function Projects({ data }) {
         </div>
         <p>
           Like what you see? Email me at{" "}
-          <a href="mailto:scriado.f@gmail.com">{contact}</a> for a quote!
+          <a className="email" href="mailto:scriado.f@gmail.com">
+            {contact}
+          </a>{" "}
+          for a quote!
         </p>
       </div>
     </Layout>

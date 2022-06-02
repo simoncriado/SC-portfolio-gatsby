@@ -5,20 +5,14 @@
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: white;
+  color: #ffffff;
 }
 html,
 body {
   min-height: 100%;
 }
 body {
-  background: radial-gradient(
-    at top left,
-
-    #403b4a 0%,
-    #e7e9bb 100%
-  );
-  background-repeat: no-repeat;
+  background: #222222;
   height: 100%;
 }
 p {
@@ -28,7 +22,6 @@ p {
 
 /* layout & nav */
 .layout {
-  /* max-width: 1200px; */
   width: 60%;
   margin: 0 auto;
 }
@@ -44,28 +37,20 @@ nav .links {
   display: inline-block;
   text-align: right;
 }
-/* nav a {
-  display: inline-block;
-  margin-left: 20px;
-  font-weight: 400;
-  padding-bottom: 8px;
-  border-bottom: 3px solid transparent;
-} */
-/* nav a:hover {
-  border-color: white;
-} */
 nav a {
   display: inline-block;
   margin-left: 20px;
   font-weight: 400;
-
-  /* border-bottom: 3px solid transparent; */
+  transition: 0.5s;
+}
+nav a:hover {
+  color: #0784b5;
 }
 nav a::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: white;
+  background: #0784b5;
   display: block;
   margin: auto;
   margin-top: 5px;
@@ -74,22 +59,47 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
-.image {
-  border-radius: 5px;
+[aria-current]:not([aria-current="false"]) {
+  color: #0784b5;
+  font-weight: bold;
 }
-
+.error {
+  text-align: center;
+  background: rgba(176, 0, 32, 0.1);
+  border: 1px solid #b00020;
+  border-radius: 10px;
+  padding: 20px;
+}
+.error > h2 {
+  font-size: 3em;
+  color: #b00020;
+}
 ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #403b4a;
+  background: #878787;
   border-radius: 6px;
 }
-
-.about {
-  text-align: center;
+.email {
+  color: #0784b5;
+  transition: 0.5s;
 }
-.about > h2 {
-  font-size: 3em;
-  margin-top: 80px;
+.email:hover {
+  font-size: 1.3em;
+}
+
+/* Media query for mobile phones */
+@media (max-width: 800px) {
+  .layout {
+    width: 80%;
+  }
+  nav a {
+    display: block;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+  nav a:hover::after {
+    width: 0%;
+  }
 }
