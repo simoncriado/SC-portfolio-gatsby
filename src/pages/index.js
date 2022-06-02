@@ -15,7 +15,7 @@ export default function Home({ data }) {
       </Helmet>
       <section className={styles.header}>
         <div>
-          <h2>Design</h2>
+          <h2 class="autoType">Design</h2>
           <h3>Develop & Deploy</h3>
           <p>
             <Typical
