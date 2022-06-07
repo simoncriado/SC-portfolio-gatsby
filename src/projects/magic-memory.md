@@ -1,12 +1,10 @@
 ---
 title: Magic Memory
-stack: React
+stack: React & CSS
 slug: magic-memory
 url: https://magic-memory-cardgame.netlify.app
 date: 2021-10-01T00:00:00+00:00
 thumb: ../../static/assets/images/memory.png
-# thumb: ../images/thumbs/memory.png
-# featuredImg: ../images/featured/food-banner.png
 ---
 
-Part of an Udemy Course
+Part of an Udemy Course. Displaying 12 cards. Adding game logic and functionality. Option to start a new game and displaying the number of turns already used.
