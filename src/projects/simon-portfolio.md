@@ -1,5 +1,5 @@
 ---
-title: Simon Portfolio
+title: My own Portfolio
 stack: GatsbyJS, CSS & Netlify CMS
 slug: simon-portfolio
 url: simonc.netlify.app
