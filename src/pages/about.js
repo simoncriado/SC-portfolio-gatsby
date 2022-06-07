@@ -10,19 +10,19 @@ export default function About() {
         <div className={styles.description}>
           <p>
             My professional career started in tourism and it took mostly place
-            in Switzerland. In the different positions (hotels, restaurants,
+            in Switzerland. In the various positions (hotels, restaurants,
             airlines, etc) I got the chance to meet many different types of
-            people, got to work in different places, had the chance to travel
-            the World and faced many different, some of them challenging,
+            people, got to work in many places & environments, had the chance to
+            travel the World and faced many different, some of them challenging,
             situations. But at some point I realised I had already "taken"
             everything I could, and wanted, from that sector. It was time for a
             CHANGE!
           </p>
           <p>
-            Then after some researching, talking with different people and
-            getting some first hands-on experience in coding, in early 2019 I
-            decided to quit my job as a Cabin Crew Member and started looking
-            for a coding bootcamp that suited my needs.
+            Then after some researching, talking with some people and getting
+            some first hands-on experience in coding, in early 2019 I decided to
+            quit my job as a Cabin Crew Member and started looking for a coding
+            bootcamp that suited my needs.
           </p>
           <p>
             The coding bootcamp at Ubiqum Academy in Barcelona was a great idea!
@@ -40,7 +40,7 @@ export default function About() {
           </p>
           <p>
             Now I am looking for a professional position to strengthen my
-            programming skills and knowledge, and continue learning. I am an
+            programming skills & knowledge, and continue learning. I am an
             adventurous person, I love challenges and I feel ready for this next
             step in my professional path.
           </p>
