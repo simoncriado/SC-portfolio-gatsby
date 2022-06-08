@@ -17,8 +17,8 @@
 .project {
   height: 500px;
   width: 300px;
-  /* background: rgba(187, 134, 252, 0.1);
-  border: 1px solid #bb86fc; */
+  /* background: rgba(187, 134, 252, 0.1); */
+  border: 1px solid #0784b5;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   word-wrap: break-word;

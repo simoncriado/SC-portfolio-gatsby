@@ -19,10 +19,10 @@ export default function About() {
             CHANGE!
           </p>
           <p>
-            Then after some researching, talking with some people and getting
-            some first hands-on experience in coding, in early 2019 I decided to
-            quit my job as a Cabin Crew Member and started looking for a coding
-            bootcamp that suited my needs.
+            Then after researching, talking with people and getting some first
+            hands-on experience in coding, in early 2019 I decided to quit my
+            job as a Cabin Crew Member and started looking for a coding bootcamp
+            that suited my needs.
           </p>
           <p>
             The coding bootcamp at Ubiqum Academy in Barcelona was a great idea!
@@ -45,11 +45,11 @@ export default function About() {
             step in my professional path.
           </p>
           <p>
-            If you like what you see, you can email me at{" "}
+            Please feel free to email me at{" "}
             <a className="email" href="mailto:scriado.f@gmail.com">
               scriado.f@gmail.com
-            </a>{" "}
-            for a quote!
+            </a>
+            .
           </p>
         </div>
       </div>

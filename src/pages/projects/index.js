@@ -13,7 +13,9 @@ export default function Projects({ data }) {
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I´ve created and worked on</h3>
-        <p>(You can click on any of the card to go to each project website!)</p>
+        <p>
+          (You can click on any of the cards to go to each project website!)
+        </p>
         <div className={styles.projects}>
           {projects.map(project => (
             <a href={project.frontmatter.url} key={project.id}>
@@ -34,11 +36,11 @@ export default function Projects({ data }) {
           ))}
         </div>
         <p>
-          Like what you see? Email me at{" "}
+          Please feel free to email me at{" "}
           <a className="email" href="mailto:scriado.f@gmail.com">
             {contact}
-          </a>{" "}
-          for a quote!
+          </a>
+          .
         </p>
       </div>
     </Layout>
