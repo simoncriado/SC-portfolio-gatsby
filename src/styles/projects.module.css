@@ -27,7 +27,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 10px;
-  border: 1px solid #0784b5;
+  border: 1px solid #0784b5 !important;
   height: 600px;
   width: 350px;
   position: relative;

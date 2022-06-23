@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
+import sanitizeHtml from "sanitize-html"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -28,7 +29,9 @@ export default function Projects({ data }) {
                 <p>{project.frontmatter.stack}</p>
                 <p
                   className={styles.projecttext}
-                  dangerouslySetInnerHTML={{ __html: project.html }}
+                  dangerouslySetInnerHTML={{
+                    __html: sanitizeHtml(project.html),
+                  }}
                 />
                 <a href={project.frontmatter.url} key={project.id}>
                   Visit Website

@@ -39,7 +39,7 @@
 .img {
   position: relative;
   border-radius: 10px;
-  border: solid 1px #0784b5;
+  border: solid 1px #0784b5 !important;
   top: 0;
   left: 0;
 }
