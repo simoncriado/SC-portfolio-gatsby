@@ -12,27 +12,29 @@ export default function Projects({ data }) {
     <Layout>
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
-        <h3>Projects & Websites I´ve created and worked on</h3>
-        <p>
-          (You can click on any of the cards to go to each project website!)
-        </p>
+        <h3>Projects & Websites I have created and worked on</h3>
         <div className={styles.projects}>
           {projects.map(project => (
-            <a href={project.frontmatter.url} key={project.id}>
-              <div className={styles.project}>
-                <GatsbyImage
-                  image={
-                    project.frontmatter.thumb.childImageSharp.gatsbyImageData
-                  }
-                  alt="project image"
+            <div key={project.id} className={styles.uicard}>
+              <GatsbyImage
+                className={styles.image}
+                image={
+                  project.frontmatter.thumb.childImageSharp.gatsbyImageData
+                }
+                alt="project image"
+              />
+              <div className={styles.description}>
+                <h3>{project.frontmatter.title}</h3>
+                <p>{project.frontmatter.stack}</p>
+                <p
+                  className={styles.projecttext}
+                  dangerouslySetInnerHTML={{ __html: project.html }}
                 />
-                <div className={styles.text}>
-                  <h3>{project.frontmatter.title}</h3>
-                  <p>{project.frontmatter.stack}</p>
-                  <div dangerouslySetInnerHTML={{ __html: project.html }} />
-                </div>
+                <a href={project.frontmatter.url} key={project.id}>
+                  Visit Website
+                </a>
               </div>
-            </a>
+            </div>
           ))}
         </div>
         <p>
@@ -65,8 +67,8 @@ export const query = graphql`
               gatsbyImageData(
                 layout: CONSTRAINED
                 placeholder: BLURRED
-                width: 300
-                height: 300
+                width: 350
+                height: 500
               )
             }
           }
