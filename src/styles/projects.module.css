@@ -24,7 +24,8 @@
   min-height: 100vh;
 }
 .uicard {
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 10px;
   border: 1px solid #0784b5;
   height: 600px;
@@ -75,7 +76,8 @@
 
 @media (hover: hover) {
   .uicard {
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     border: 1px solid #0784b5;
     height: 500px;
     width: 350px;

@@ -34,8 +34,8 @@ export default function About() {
             new things, but I was missing the coding part!
           </p>
           <p>
-            Then in early 2022 I decided to quit that position and moved to
-            Barcelona where I enrolled in some online courses and started coding
+            In early 2022 I decided to quit that position and moved to Barcelona
+            where I enrolled in some online courses and started coding
             full-time. My goal is to continue improving my coding skills, to
             grow as a professional developer and to be part of a team ruled by
             pure and constructive values. I am very motivated and have the

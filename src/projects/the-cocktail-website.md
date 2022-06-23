@@ -7,5 +7,5 @@ date: 2019-08-01T00:00:00+00:00
 thumb: ../../static/assets/images/cocktail.png
 ---
 
-Project done during an intensive coding bootcamp at Ubiqum Code Academy. Got data from an API and used it to display all different cocktails, the recipes and the ingredients used. Also created a list of Spirits and showed all related cocktails (made with that spirit).
-Implemented Firebase to create a google login and a real chat section, to chat with other cocktail lovers.
+Project done during an intensive coding bootcamp at Ubiqum Code Academy. Getting data from an API and using it to display a list of cocktails, the recipes and the ingredients used. Also created a list of Spirits and showed all related cocktails.
+I also Implemented Firebase to create a google login and a real chat section, to chat with other cocktail lovers.
