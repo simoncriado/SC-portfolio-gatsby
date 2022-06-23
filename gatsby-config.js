@@ -32,19 +32,19 @@ module.exports = {
         icon: "src/images/fav1.png",
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-plugin-netlify-cms-paths`],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-netlify-cms-paths`,
-      options: {
-        // Path to your Netlify CMS config file
-        cmsConfig: `/static/admin/config.yml`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [`gatsby-plugin-netlify-cms-paths`],
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-netlify-cms-paths`,
+    //   options: {
+    //     // Path to your Netlify CMS config file
+    //     cmsConfig: `/static/admin/config.yml`,
+    //   },
+    // },
     // {
     //   resolve: `gatsby-remark-relative-images-v2`,
     // },

@@ -2,7 +2,7 @@
 title: My own Portfolio
 stack: GatsbyJS, CSS & Netlify CMS
 slug: simon-portfolio
-url: simonc.netlify.app
+url: https://simonc.netlify.app
 date: 2022-06-07T09:10:22.263Z
 thumb: ../../static/assets/images/portfolio.png
 ---

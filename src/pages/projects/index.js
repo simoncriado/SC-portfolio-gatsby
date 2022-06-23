@@ -65,7 +65,7 @@ export const query = graphql`
           thumb {
             childImageSharp {
               gatsbyImageData(
-                layout: CONSTRAINED
+                layout: FIXED
                 placeholder: BLURRED
                 width: 350
                 height: 500
