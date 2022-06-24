@@ -27,12 +27,15 @@ export default function Projects({ data }) {
               <div className={styles.description}>
                 <h3>{project.frontmatter.title}</h3>
                 <p>{project.frontmatter.stack}</p>
-                <p
+                {/* <p
                   className={styles.projecttext}
                   dangerouslySetInnerHTML={{
                     __html: sanitizeHtml(project.html),
                   }}
-                />
+                /> */}
+                <p className={styles.projecttext}>
+                  {project.frontmatter.description}
+                </p>
                 <a href={project.frontmatter.url} key={project.id}>
                   Visit Website
                 </a>
@@ -63,6 +66,7 @@ export const query = graphql`
         frontmatter {
           title
           stack
+          description
           slug
           url
           thumb {

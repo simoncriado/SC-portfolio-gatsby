@@ -1,6 +1,7 @@
 ---
 title: Meteo Cat
 stack: HTML, CSS & JavaScript
+description: Weather App to display the next 3 days forecast for any town in Cataluña. Getting data from the official weather service in Cataluña. Saving the last search in local storage and marking the current hour.
 slug: meteo-cat
 url: https://meteo-catalunya.netlify.app/
 date: 2022-05-01T00:00:00+00:00
