@@ -6,6 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import sanitizeHtml from "sanitize-html"
 
 export default function Projects({ data }) {
+  // Getting the data from the graphQL database
   const projects = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
 
@@ -14,6 +15,7 @@ export default function Projects({ data }) {
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I have created and worked on</h3>
+        {/* Looping through all projects and creating a card for each one */}
         <div className={styles.projects}>
           {projects.map(project => (
             <div key={project.id} className={styles.uicard}>
@@ -27,6 +29,10 @@ export default function Projects({ data }) {
               <div className={styles.description}>
                 <h3>{project.frontmatter.title}</h3>
                 <p>{project.frontmatter.stack}</p>
+                {/* This is a temporary solution. Check if the dangerouslySetInnerHTML is causing the problems
+                with the sameSite attributes... anf if yes, how to solve it.
+                Setting the cookies correctly: How do i do this?
+                In theory the HTML is being sanitized... does this help in anyway? */}
                 {/* <p
                   className={styles.projecttext}
                   dangerouslySetInnerHTML={{
