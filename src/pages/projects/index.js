@@ -1,17 +1,23 @@
 import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
+import Helmet from "react-helmet"
 import * as styles from "../../styles/projects.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
-import sanitizeHtml from "sanitize-html"
 
 export default function Projects({ data }) {
   // Getting the data from the graphQL database
   const projects = data.projects.nodes
-  const contact = data.contact.siteMetadata.contact
 
   return (
     <Layout>
+      <Helmet>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+      </Helmet>
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I have created and worked on</h3>
@@ -49,13 +55,6 @@ export default function Projects({ data }) {
             </div>
           ))}
         </div>
-        <p>
-          Please feel free to email me at{" "}
-          <a className="email" href="mailto:scriado.f@gmail.com">
-            {contact}
-          </a>
-          .
-        </p>
       </div>
     </Layout>
   )

@@ -1,0 +1,29 @@
+.social {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.social i {
+  font-size: 25px;
+  color: #0784b5;
+}
+.btnFooter {
+  display: inline-block;
+  background: rgba(7, 132, 181, 0.1);
+  border: 1px solid #0784b5;
+  color: #0784b5;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.btnFooter:hover {
+  background: #0784b5;
+  color: black;
+}
+.btnFooter:hover i {
+  color: black;
+}

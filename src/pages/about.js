@@ -1,10 +1,18 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Helmet from "react-helmet"
 import * as styles from "../styles/about.module.css"
 
 export default function About() {
   return (
     <Layout>
+      <Helmet>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+      </Helmet>
       <div className={styles.about}>
         <h2>Some information about myself</h2>
         <div className={styles.description}>
@@ -48,13 +56,6 @@ export default function About() {
             working on. My tech stack includes HTML, CSS, BootStrap, JavaScript,
             React, the usage of APIs, Firebase, GatsbyJS and CMS (Netlify) among
             others.
-          </p>
-          <p>
-            Please feel free to email me at{" "}
-            <a className="email" href="mailto:scriado.f@gmail.com">
-              scriado.f@gmail.com
-            </a>
-            .
           </p>
         </div>
       </div>
