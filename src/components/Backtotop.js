@@ -20,8 +20,10 @@ export default function Backtotop() {
     })
     scrollProgress.style.background = `conic-gradient(#0784b5 ${scrollValue}%, #878787 ${scrollValue}%)`
   }
-  window.onscroll = calcScrollValue
-  window.onload = calcScrollValue
+  if (typeof window !== `undefined`) {
+    window.onscroll = calcScrollValue
+    window.onload = calcScrollValue
+  }
 
   return (
     <div className={styles.progress} id="progress">
