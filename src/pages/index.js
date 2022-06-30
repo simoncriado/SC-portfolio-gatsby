@@ -52,12 +52,6 @@ export default function Home({ data }) {
           image={data.file.childImageSharp.gatsbyImageData}
           alt="portrait"
         />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          tempore ipsa, obcaecati non fugiat, cumque quidem sequi mollitia
-          aspernatur ducimus quas. Voluptates officia ex, temporibus quam
-          laborum commodi dicta a?
-        </p>
       </section>
     </Layout>
   )
