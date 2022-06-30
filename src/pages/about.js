@@ -17,8 +17,8 @@ export default function About() {
         <h2>Some information about myself</h2>
         <div className={styles.description}>
           <p>
-            My professional career started in tourism and it took mostly place
-            in Switzerland. In the various positions (hotels, restaurants,
+            My professional career started in turism and it took mostly place in
+            Switzerland. In the various positions (hotels, restaurants,
             airlines, etc) I got the chance to meet different types of people,
             got to work in many places & environments, had the chance to travel
             the World and faced distinct, some of them challenging, situations.

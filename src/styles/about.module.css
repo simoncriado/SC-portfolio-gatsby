@@ -17,3 +17,10 @@
   border: solid 1px #0784b5;
   border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+  .about > h2 {
+    font-size: 3em;
+    margin-top: 0px;
+  }
+}

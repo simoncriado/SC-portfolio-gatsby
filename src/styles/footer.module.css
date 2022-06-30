@@ -22,8 +22,8 @@
 }
 .btnFooter:hover {
   background: #0784b5;
-  color: black;
+  color: #222222;
 }
 .btnFooter:hover i {
-  color: black;
+  color: #222222;
 }
