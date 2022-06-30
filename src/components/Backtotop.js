@@ -10,10 +10,12 @@ export default function Backtotop() {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight
     let scrollValue = Math.round((pos * 100) / calcHeight)
-    if (pos > 100) {
-      scrollProgress.style.display = "grid"
-    } else {
-      scrollProgress.style.display = "none"
+    if (typeof window !== `undefined`) {
+      if (pos > 100 && window.location.href !== "https://simonc.netlify.app/") {
+        scrollProgress.style.display = "grid"
+      } else {
+        scrollProgress.style.display = "none"
+      }
     }
     scrollProgress.addEventListener("click", () => {
       document.documentElement.scrollTop = 0
