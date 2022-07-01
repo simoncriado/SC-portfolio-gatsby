@@ -1,6 +1,10 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Helmet from "react-helmet"
+
+// Components
+import Layout from "../components/Layout"
+
+// Styles
 import * as styles from "../styles/about.module.css"
 
 export default function About() {

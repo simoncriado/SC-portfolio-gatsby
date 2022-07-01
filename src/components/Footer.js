@@ -1,6 +1,9 @@
 import React from "react"
+
+// Styles
 import * as styles from "../styles/footer.module.css"
 
+// Footer with the icons and links to my professional social media
 export default function Footer() {
   return (
     <div className={styles.social}>

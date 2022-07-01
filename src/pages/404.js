@@ -1,7 +1,10 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 
+// Components
+import Layout from "../components/Layout"
+
+// Custom error page displayed if the user enters a url extension that does not exist
 export default function NotFound() {
   return (
     <Layout>

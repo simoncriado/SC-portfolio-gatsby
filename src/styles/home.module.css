@@ -13,9 +13,8 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
-.autoText {
-  color: #0784b5;
-}
+
+/* Button styles */
 .btn {
   display: inline-block;
   background: rgba(7, 132, 181, 0.1);
@@ -32,16 +31,16 @@
   background: #0784b5;
   color: #222222;
 }
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
+
+/* Auto type styles */
+.autoText {
+  color: #0784b5;
 }
+
+/* Image styles */
 .imgContainer {
   border: solid 1px #0784b5;
   border-radius: 10px;
-  /* -webkit-border-radius: 10px;
-  overflow: hidden; */
 }
 .img {
   position: relative;
@@ -49,6 +48,7 @@
   left: 0;
 }
 
+/* Styles for small screen devices */
 @media (max-width: 600px) {
   .header {
     display: flex;

@@ -1,8 +1,12 @@
 import React from "react"
+
+// Components
 import Navbar from "./Navbar"
-import "../styles/global.css"
 import Footer from "./Footer"
 import Backtotop from "./Backtotop"
+
+// Styles
+import "../styles/global.css"
 
 export default function Layout({ children }) {
   return (

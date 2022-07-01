@@ -1,3 +1,5 @@
+// THIS IS NOT BEING USED. THE PURPOSE WAS TO CREATE A SEPARATE DETAILS PAGE FOR EACH PROJECT
+
 const path = require(`path`)
 
 exports.createPages = async ({ graphql, actions }) => {

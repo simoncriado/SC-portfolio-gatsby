@@ -1,7 +1,8 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 export default function Navbar() {
+  // Not really neccesary but just as practice on how to extract data from graphQL
   const data = useStaticQuery(graphql`
     {
       site {

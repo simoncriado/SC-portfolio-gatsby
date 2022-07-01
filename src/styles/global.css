@@ -20,7 +20,7 @@ p {
   line-height: 1.5em;
 }
 
-/* layout & nav */
+/* Layout & nav styles */
 .layout {
   width: 60%;
   margin: 0 auto;
@@ -64,10 +64,13 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+/* This is to mark in blue the current page we are in */
 [aria-current]:not([aria-current="false"]) {
   color: #0784b5;
   font-weight: bold;
 }
+
+/* Error page styles */
 .error {
   text-align: center;
   background: rgba(176, 0, 32, 0.1);
@@ -79,6 +82,8 @@ nav a:hover::after {
   font-size: 3em;
   color: #b00020;
 }
+
+/* Custom scrollbar styles */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -86,15 +91,8 @@ nav a:hover::after {
   background: #878787;
   border-radius: 6px;
 }
-.email {
-  color: #0784b5;
-  transition: 0.5s;
-}
-.email:hover {
-  font-size: 1.3em;
-}
 
-/* Media query for mobile phones */
+/* Media query for small screen devices */
 @media (max-width: 800px) {
   .layout {
     width: 80%;

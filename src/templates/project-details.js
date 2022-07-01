@@ -1,7 +1,13 @@
+// THIS PAGE IS NOT BEING USED. INITIALLY IT WAS FOR DISPLAYING INFO ABOUT EVERY PROJECT IN A DIFFERENT PAGE. AT THE END I DECIDED TO DISPLAY THE INFO IN A SMALL CARD FOR EACH PROJECT
+
 import React from "react"
-import Layout from "../components/Layout"
-import * as styles from "../styles/project-details.module.css"
 import { graphql } from "gatsby"
+
+// Components
+import Layout from "../components/Layout"
+
+// Styles
+import * as styles from "../styles/project-details.module.css"
 
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark

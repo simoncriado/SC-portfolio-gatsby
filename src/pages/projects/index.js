@@ -1,9 +1,13 @@
-import { graphql } from "gatsby"
 import React from "react"
-import Layout from "../../components/Layout"
+import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import * as styles from "../../styles/projects.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
+
+// Components
+import Layout from "../../components/Layout"
+
+// Styles
+import * as styles from "../../styles/projects.module.css"
 
 export default function Projects({ data }) {
   // Getting the data from the graphQL database
@@ -11,6 +15,7 @@ export default function Projects({ data }) {
 
   return (
     <Layout>
+      {/* Helmet just allows to put something on the "header" of this page. Like a script, bootstrap links, font links, etc */}
       <Helmet>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <link
@@ -35,16 +40,6 @@ export default function Projects({ data }) {
               <div className={styles.description}>
                 <h3>{project.frontmatter.title}</h3>
                 <p>{project.frontmatter.stack}</p>
-                {/* This is a temporary solution. Check if the dangerouslySetInnerHTML is causing the problems
-                with the sameSite attributes... anf if yes, how to solve it.
-                Setting the cookies correctly: How do i do this?
-                In theory the HTML is being sanitized... does this help in anyway? */}
-                {/* <p
-                  className={styles.projecttext}
-                  dangerouslySetInnerHTML={{
-                    __html: sanitizeHtml(project.html),
-                  }}
-                /> */}
                 <p className={styles.projecttext}>
                   {project.frontmatter.description}
                 </p>

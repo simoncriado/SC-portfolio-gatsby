@@ -1,3 +1,4 @@
+/* Seems like the smooth scroll-behavior is not supported by Safari. The progress bar on the backToTop button looks a bit less nice but still acceptable */
 html {
   scroll-behavior: smooth;
 }

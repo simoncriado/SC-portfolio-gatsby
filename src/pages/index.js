@@ -1,12 +1,17 @@
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
-import Typical from "react-typical"
-import Layout from "../components/Layout"
-import * as styles from "../styles/home.module.css"
-// import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
+// Package for the auto type effect
+import Typical from "react-typical"
+// For allowing the download of my CV
 import downloadFile from "../../static/assets/documents/CV_SIMON_CRIADO.pdf"
+
+// Components
+import Layout from "../components/Layout"
+
+// Styles
+import * as styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
   return (
@@ -49,11 +54,7 @@ export default function Home({ data }) {
           </a>
         </div>
         <div className={styles.imgContainer}>
-          {/* <GatsbyImage
-            className={styles.img}
-            image={data.file.childImageSharp.gatsbyImageData}
-            alt="portrait"
-          /> */}
+          {/* Using a StaticImage as this one will always be the same one" */}
           <StaticImage
             className={styles.img}
             src="../../static/assets/images/fotoCV.JPG"
@@ -65,13 +66,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query Banner {
-    file(relativePath: { eq: "fotoCV.JPG" }) {
-      childImageSharp {
-        gatsbyImageData
-      }
-    }
-  }
-`
