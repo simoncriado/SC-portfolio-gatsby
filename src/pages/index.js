@@ -4,7 +4,8 @@ import Helmet from "react-helmet"
 import Typical from "react-typical"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import downloadFile from "../../static/assets/documents/CV_SIMON_CRIADO.pdf"
 
 export default function Home({ data }) {
@@ -47,11 +48,19 @@ export default function Home({ data }) {
             Download my CV
           </a>
         </div>
-        <GatsbyImage
-          className={styles.img}
-          image={data.file.childImageSharp.gatsbyImageData}
-          alt="portrait"
-        />
+        <div className={styles.imgContainer}>
+          {/* <GatsbyImage
+            className={styles.img}
+            image={data.file.childImageSharp.gatsbyImageData}
+            alt="portrait"
+          /> */}
+          <StaticImage
+            className={styles.img}
+            src="../../static/assets/images/fotoCV.JPG"
+            alt="portrait"
+            imgStyle={{ borderRadius: "9px" }}
+          />
+        </div>
       </section>
     </Layout>
   )
