@@ -48,18 +48,27 @@ export default function About() {
           <p>
             In early 2022 I decided to quit that position and moved to Barcelona
             where I enrolled in some online courses and started coding
-            full-time. My goal is to continue improving my coding skills, to
-            grow as a professional developer and to be part of a team ruled by
-            pure and constructive values. I am very motivated and have the
-            capacity and willingness to continue learning. I bring with me
-            experience in different sectors, big flexibility, fast learning
-            capacity and a natural team player mind.
+            full-time. Then in October I started a training at the Oxygen
+            Academy. This training focuses on Frontend technologies like React
+            and Redux, includes testing with Jest and DevOps. The methodology at
+            the academy always includes a theory part at the beginning of the
+            sprints and then a practical project. I really love this approach
+            because knowing the theory is helping me to get a more global
+            overview about Web Development.
+          </p>
+          <p>
+            My goal is to continue improving my coding skills, to grow as a
+            professional developer and to be part of a team ruled by pure and
+            constructive values. I am very motivated and have the capacity and
+            willingness to continue learning. I bring with me experience in
+            different sectors, big flexibility, fast learning capacity and a
+            natural team player mind.
           </p>
           <p>
             In the project´s page you can see some of the projects I have been
-            working on. My tech stack includes HTML, CSS, BootStrap, JavaScript,
-            React, the usage of APIs, Firebase, GatsbyJS and CMS (Netlify) among
-            others.
+            working on. My tech stack includes HTML, CSS, JavaScript, React,
+            Redux, Bootstrap, SASS, Tailwind CSS, the usage of APIs, Firebase,
+            GatsbyJS and CMS (Netlify) among others.
           </p>
         </div>
       </div>
