@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // Package for the auto type effect
 import Typical from "react-typical"
 // For allowing the download of my CV
-import downloadFile from "../../static/assets/documents/CV_SIMON_CRIADO.pdf"
+import downloadFile from "../../static/assets/documents/EN_CV_SIMON_CRIADO.pdf"
 
 // Components
 import Layout from "../components/Layout"
