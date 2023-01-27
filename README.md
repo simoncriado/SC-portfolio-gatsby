@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# My Old Personal Portfolio
 
 Project done using GatsbyJS. I chose to do this project to learn and practice the usage of a CMS. For this small project it was not really needed but if I visit /admin I can add new projects to the Project´s page from the admin dashboard. Key project functionalities:
 
